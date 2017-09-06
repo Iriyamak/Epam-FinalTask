@@ -1,0 +1,52 @@
+/*-----------------------------------------*/
+/*------------SHOPPING-BAG------------------------*/
+/*-----------------------------------------*/
+	.shop-bag{
+		font: normal 12px/24px 'Roboto', sans-serif;
+	}
+	.inner-title{
+		font: bold 26px/65px 'Open Sans', sans-serif;
+	}
+	.shop-bag--list{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+		.shop-bag--item{
+			-ms-flex-preferred-size: 50%;
+			    flex-basis: 50%;
+		}
+		.shop-bag--img{
+			position: relative;
+			display: block;
+		}
+			.shop-bag--img_hover{
+				position: absolute;
+				top: 50%;
+				left:20%;
+				display: none;
+				color: #f14a58;
+				font-size: 22px;
+			}
+			.shop-bag--img{
+				-webkit-transition: -webkit-filter 0.5s;
+				transition: -webkit-filter 0.5s;
+				transition: filter 0.5s;
+				transition: filter 0.5s, -webkit-filter 0.5s;
+			}
+			.shop-bag--img:hover {
+				-webkit-filter: brightness(75%);
+        filter: brightness(75%);
+			}
+				.shop-bag--img:hover .shop-bag--img_hover{
+					display: block;
+				}
+		.shop-bag--title{
+			font-size: 14px;
+		}
+		.shop-bag--price{
+			font-size: 16.67px;
+		}

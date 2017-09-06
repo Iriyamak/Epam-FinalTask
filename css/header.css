@@ -1,0 +1,74 @@
+/* --------------- HEADER ---------*/
+header a {
+	font: bold 13px/65px 'Open Sans', sans-serif;
+}
+.header-top {
+	padding-top: 6px;
+}
+	.logo {
+		margin-top: 3px;
+	}
+		.logo_m {
+			font-size: 30px;
+		}
+		.logo_xs {
+			display: none;
+		}
+	.user-block a {
+		font: normal 12px/65px 'Roboto Regular';
+		letter-spacing: 0.1px;
+	}
+	.cart,
+	.user-block {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+		.sign-block {
+			padding-right: 53px;
+		}
+
+		.bag-ico {
+			padding-right: 13px;
+		}
+	.menu_xs {
+		display: none;
+	}
+.header-bottom {
+	margin-top: -6px;
+}
+	.main-nav a {
+		line-height: 40px;
+		padding-right: 65px;
+		letter-spacing: 0.2px;
+	}
+	.main-nav li:last-child a {
+		padding-right: 0;
+	}
+	.search-block form {
+		position: relative;
+	}
+	.search-block input[type=search] {
+		font: bold 12px 'Open Sans';
+		width: 120px;
+		padding: 10px 12px 10px 0;
+		color: #a8a8a8;
+		border: none;
+		border-bottom: 1px solid #e5e5e5;
+		-webkit-appearance: textfield;
+		-webkit-box-sizing: content-box;
+		background: transparent;
+	}
+	input::-webkit-search-cancel-button,
+	input::-webkit-search-decoration {
+		display: none;
+	}
+	.search-ico {
+		position: absolute;
+		top: 35%;
+		right: 0;
+		z-index: -1;
+	}

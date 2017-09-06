@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping Bag</title>
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <picture class="logo">
+                <source srcset="img/icons/logo.png" media="(max-width: 767px)">
+                <img alt="logo" src="img/icons/logo_full.png">
+            </picture>
+            <div class="header-links-container">
+                <a href="#" class="sign-up-link">E-mail sign up</a>
+                <a href="shopping_bag.html" class="shopping-bag-link">Bag</a>
+
+                <span class="total-price"></span>
+                <span class="items-counter"></span>
+            </div>
+            <button type="button" id="dropdown-button" class="dropdown-menu-button"><img src="img/icons/nav_open.png"
+                                                                                 alt="menu"></button>
+            <button type="button" id="close-dropdown" class="hidden-button dropdown-menu-button"><img
+            src="img/icons/menu_close.png" alt="close button"></button>
+            <nav id="dropdown-menu" class="hidden-menu">
+                <ul class="navigation-links-container">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Accesories</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Clearance</a></li>
+                    <li class="last"><a href="#">Store Locator</a></li>
+                </ul>
+                <input class="search-input" placeholder="Style Name">
+                <button class="search-button" type="button"><img alt="search" src="img/icons/search.png"></button>
+            </nav>
+        </header>
+        <main class="main-page-content">
+            <h1 class="page-heading shopping-bag-heading">Shopping bag</h1>
+            <div class="items-in-bag">
+
+            </div>
+            <figure class="item-added-to-bag item-in-bag-pattern">
+                    <div class="item-in-bag-image-container">
+                        <img class="item-in-bag-image" src="#" alt="item">
+                        <p class="price"></p>
+                    </div>
+                    
+                    <figcaption class="item-properties-description">
+                        <h5 class="name">#</h5>
+                        <p class="color"></p>
+                        <p class="size"></p>
+                        <p class="quantity"></p>
+                        <button type="button" class="removing-item-button">Remove item</button>
+                    </figcaption>
+                </figure>
+            <aside class="notice">
+                <p>You've qualified for Free UK Next Day Delivery on your order.</p>
+                <p>Don't forget to enter the code nextday at checkout</p>
+            </aside>
+
+            <div class="main-button-container justified-buttons">
+                <button type="button" id="clear-bag-button" class="clear-bag-button">Empty bag</button>
+                <button type="button" class="main-button" id="buy-items-button">Buy now</button>
+                <div class="total-cost-container">
+                    <p class="total-cost-heading">Total Cost</p>
+                    <p class="total-price">&pound;1640.50</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="customer-navigation">
+                <h3 class="heading-of-footer-sections">Quick Links</h3>
+                <ul class="links-list">
+                    <li><a href="#">Store locator</a></li>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Size guide</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="customer-navigation customer-care">
+                <h3 class="heading-of-footer-sections">Customer Care</h3>
+                <ul class="links-list">
+                    <li><a href="#">Customer service</a></li>
+                    <li><a href="#">Track my order</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Shipping &amp; delivery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <section class="contact-info">
+                <h3 class="contact-info-heading">Questions</h3>
+                <p class="contacts"><img src="img/icons/ico_tw.png" alt="icon"> Tweet us <span class="temp">@template</span></p>
+            </section>
+            <section class="contact-info bordered-left-contact-info">
+                <h3 class="contact-info-heading">Order by phone</h3>
+                <p class="contacts">8-800-409-47-12</p>
+            </section>
+
+            <div class="delivery-service-advertisement">
+                <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+            </div>
+
+            <ul class="footer-navigation">
+                <li><a href="#">Legal notice</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Site map</a></li>
+            </ul>
+
+            <div class="follow-buttons-container">
+                <button class="follow-button-facebook"></button>
+                <button class="follow-button-twitter"></button>
+            </div>
+
+            <div class="about-site-info">
+                <div class="trademark">
+                    <span>&copy; 2010-2015, The Template Group inc.</span>
+                </div>
+
+
+                <div class="share">
+                    <span>Share</span>
+                    <button type="button" class="share-button" value="1 437">1 437</button>
+                </div>
+
+
+                <ul class="footer-navigation">
+                    <li><a href="#">Legal notice</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Site map</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="js/dropdown_menu.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/bagStorage.js"></script>
+    <script src="js/updateTotals.js"></script>
+    <script src="js/shoppingBag.js"></script>
+</body>
+
+</html>

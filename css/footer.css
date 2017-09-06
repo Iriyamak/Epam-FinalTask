@@ -1,0 +1,106 @@
+/* --------------- FOOTER ---------*/
+/* --------------- ESSENTIALS ---------*/
+.essentials {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 10px;
+}
+	.links {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		margin-bottom: 97px;
+	}
+		.links-nav {
+			-ms-flex-preferred-size: 45%;
+			flex-basis: 45%;
+		}
+	.contacts {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		border-left: 1px solid #e5e5e5;
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding-left: 58px;
+	}
+	.questions {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+	}
+	.site-nav_xs {
+		display: none;
+	}
+		.essentials-title {
+			font: bold 16px/65px 'Open Sans', sans-serif;
+			margin-bottom: 13px;
+		}
+		.contacts .essentials-title {
+			margin-bottom: -16px;
+		}
+		.questions-twi {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+			.questions .twi-icon {
+				margin-right: 10px;
+			}
+		.order a {
+			letter-spacing: 0.7px;
+		}
+	.delivery_l {
+		font: italic 16px/30px 'Times New Roman', sans-serif;
+		-ms-flex-preferred-size: 60%;
+		flex-basis: 60%;
+		letter-spacing: 0.06px;
+		margin-top: -46px;
+	}
+		.delivery_l p{
+		margin-bottom: 0;
+		}
+	.social {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		margin-top: -180px;
+	}
+		.fb-ico {
+			margin-right: 20px;
+		}
+.copyright,
+.site-nav_m {
+	padding-top: 8px;
+}
+	.copyright span,
+	.site-nav_m a {
+		font: bold 12px/65px 'Roboto', sans-serif;
+	}
+	.site-nav_m a {
+		padding-left: 36px;
+	}
+.share {
+	margin-left: 63px;
+	margin-top: 5px;
+}
+	.share a {
+		font: bold 18px/65px 'Open Sans', sans-serif;
+		margin-right: 10px;
+	}
+	.counter {
+		font: normal 12px/65px 'Roboto', sans-serif;
+	}

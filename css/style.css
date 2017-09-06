@@ -1,0 +1,150 @@
+/* --------------- Base settings ---------*/
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: normal 14px/40px 'Roboto', sans-serif;
+	letter-spacing: 0.4px;
+	min-height: 100vh;
+	text-align: left;
+	color: #000;
+	background: #fff;
+	min-width: 375px;
+}
+	a,
+	a:visited {
+		text-decoration: none;
+		color: #000;
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	a:hover,
+	.active {
+		text-decoration: none;
+		color: #f14a58;
+	}
+	a:active,
+	a:focus {
+		text-decoration: none;
+		color: #f14a58;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	input:focus {
+		outline: none;
+	}
+	.centerfix {
+		max-width: 1180px;
+		margin: 0 auto;
+		padding: 0 4.62%;
+	}
+	.essentials ul,
+	footer ul,
+	header ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.arrivals-block,
+	.banners,
+	.contacts,
+	.essentials,
+	.header-bottom,
+	.header-top,
+	.links,
+	.main-nav,
+	.site-nav_m,
+	.user-block,
+	.footer-bottom {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+/*-----------------------------------------*/
+/*------------INDEX------------------------*/
+/*-----------------------------------------*/
+/* --------------- SLIDER ---------*/
+.slider {
+	margin-top: 8px;
+	border-top: 1px solid #e5e5e5;
+}
+/* --------------- BANNERS ---------*/
+.banners {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	border-top: 1px solid #e5e5e5;
+}
+	.banners a {
+		position: relative;
+	}
+	.banner-left {
+		border-right: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.banner-right_l {
+		border-bottom: 1px solid #e5e5e5;
+	}
+		.banner-text {
+			position: absolute;
+			top: 6%;
+			right: 15%;
+			letter-spacing: 0.2px;
+		}
+		.banner-right_l .banner-text {
+			right: 17%;
+		}
+		.banner-rigth_m {
+			display: none;
+		}
+			.banner-text_title {
+				font: bold 28px/50px 'Open Sans', sans-serif;
+				margin-bottom: 0;
+			}
+			.banner-text_main {
+				font: italic 16px/26px 'Times New Roman', sans-serif;
+				margin-top: 0;
+				text-align: center;
+			}
+/* --------------- ARRIVALS ---------*/
+.arrival-title {
+	font: bold 50px/65px 'Open Sans', sans-serif;
+	margin: 128px 0 87px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+.arrivals-item {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+	.arrivals-title {
+		font: bold 14px/24px 'Roboto', sans-serif;
+		text-align: center;
+		margin-top: 44px;
+		letter-spacing: 0.4px;
+	}
+	.arrivals-all {
+		margin: 88px 0;
+		text-align: center;
+		font: bold 24px/65px 'Open Sans', sans-serif;
+	}
+	.arrivals-all a {
+		border: 1px solid #e5e5e5;
+		padding: 18px 103px 22px;
+	}

@@ -1,0 +1,460 @@
+<!--  -->
+body {
+    font-family: 'Roboto';
+    margin: 0;
+} 
+
+header {
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.logo {
+    float: left;
+    margin: auto 5%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #f14a58;
+    text-shadow: 15px 14px 36px -12px rgba(0,0,0,0.75);
+}
+.header-links-container {
+    float: left;
+}
+
+.shopping-bag-link {
+    height: 70px;
+    line-height: 65px;
+    margin-left: 50px;
+}
+
+.sign-up-link {
+    display: none;
+}
+
+
+
+.header-links-container a {
+    font-size: 12px;
+}
+
+.dropdown-menu-button {
+    float: right;
+    width: 58px;
+    border: none;
+    background: transparent;
+    box-sizing: content-box;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+.dropdown-menu-button:hover {
+    background-color: #e5e5e5;
+}
+
+#dropdown-button {
+    border-left: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.hidden-button {
+    display: none;
+}
+
+
+<!--  -->
+
+footer {
+    border-top: 1px solid #c5c5c5;
+    font-size: 12px;
+}
+
+.customer-navigation .links-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
+
+.customer-navigation::before, 
+.contact-info::before, 
+.customer-navigation::after, 
+.contact-info::after,
+.about-site-info::after {
+    display: table;
+    content: "";
+}
+
+.customer-navigation::after, .contact-info::after, .about-site-info::after {
+    clear: both;
+}
+
+.customer-navigation {
+    padding-bottom: 47px;
+}
+
+.customer-navigation a {
+    line-height: 37px;
+}
+
+
+.customer-navigation, .contact-info {
+    width: 45%;
+    float: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    
+}
+
+.contact-info {
+    padding-bottom: 33px;
+    border-top: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.contacts img {
+    margin-right: 10px;
+}
+
+.contact-info-heading {
+    margin: 0
+}
+
+.bordered-left-contact-info {
+    padding-left: calc(5% - 1px);
+    border-left: 1px solid #c5c5c5;
+}
+
+
+.delivery-service-advertisement {
+    display: none;
+}
+
+.footer-navigation, .follow-buttons-container {
+    line-height: 60px;
+    height: 60px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.heading-of-footer-sections, .contact-info-heading {
+    font-family: "Open Sans";
+}
+
+.footer-navigation {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0;
+}
+
+.footer-navigation, .trademark {
+    float: left;
+    width: 65%;
+    padding-left: 5%;
+}
+
+.footer-navigation li {
+    display: inline;
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.follow-buttons-container, .share {
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.follow-button-facebook, .follow-button-twitter, .share-button {
+    height: 20px;
+    width: 20px;
+    border: none;
+    outline: none;
+}
+
+.follow-button-facebook {
+    background: transparent url("../img/icons/soc_f.png") center no-repeat;
+}
+
+.follow-button-twitter {
+    background: transparent url("../img/icons/soc_tw.png") center no-repeat;
+}
+
+.about-site-info .footer-navigation {
+    display: none;
+}
+
+.trademark, .share {
+    line-height: 70px;
+    height: 70px;
+}
+
+.share-button {
+    line-height: 20px;
+    width: 50px;
+    background: url("../img/icons/share.png") center no-repeat;
+}
+
+/* for dropdown menu */
+
+#dropdown-menu {
+    font-family: "Open Sans";
+    font-size: 26px;
+    z-index: 3;
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 1px 150px 36px 33px rgba(0,0,0,0.75);
+}
+
+.navigation-links-container {
+    margin: 0;
+    list-style-type: none;
+    padding-left: 5%;
+}
+
+.navigation-links-container li {
+    line-height: 70px;
+    height: 70px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 20px 5%;
+}
+
+.search-button {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .fixed-container {
+        position: static;
+    }
+
+    .sign-up-link, .total-price, .items-counter {
+        display: inline;
+    }
+
+    .dropdown-menu-button {
+        display: none !important;
+    }
+
+    .header-links-container {
+        float: right;
+        margin-right: 5%;
+    }
+
+    .sign-up-link, .shopping-bag-link {
+        line-height: 70px;
+        margin-left: 80px;
+    }
+
+
+    #dropdown-menu {
+        position: static;
+        font-size: 12px;
+        font-weight: bold;
+        box-shadow: none;
+        display: block !important;
+        clear: both;
+    }
+
+    .navigation-links-container {
+        float: left;
+        margin-bottom: 20px;
+        
+    }
+
+    .navigation-links-container li {
+        display: inline;
+        margin-right: 23px;
+        line-height: normal;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .search-button {
+        display: block;
+        float: right;
+        margin-right: 5%;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    .customer-navigation, .contact-info {
+        width: 28%;
+        border: none;
+    }
+
+    .customer-navigation {
+        padding-bottom: 85px;
+    }
+
+    .customer-navigation li {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .customer-navigation .heading-of-footer-sections {
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        padding-bottom: 0;
+    }
+
+    .contacts {
+        font-size: 14px;
+    }
+
+    
+
+    .customer-care, .contact-info, .bordered-left-contact-info, .follow-buttons-container {
+        padding-left: 15px;
+    }
+
+    .bordered-left-contact-info {
+        padding-top: 15px;
+    }
+
+    .heading-of-footer-sections, .contact-info-heading {
+        font-size: 16px;
+        margin: 5% auto;
+    }
+
+    .follow-buttons-container {
+        float: left;
+        border: none;
+        padding-top: 52px;
+        text-align: left;
+    }
+
+    .footer-navigation {
+        font-size: 12px;
+        padding-left: 0;
+        border: none;
+        display: none;
+    }
+
+    .about-site-info {
+        float: left;
+        width: 100%;
+        border-top: 1px solid #c5c5c5;
+    }
+ 
+    .about-site-info .footer-navigation {
+        display: block;
+        float: right;
+        margin: 0;
+        text-align: right;
+        padding-right: 5%;
+        width: 33.3%;
+    }
+
+    .footer-navigation a {
+        font-size: 12px;
+    }
+
+    .footer-navigation, .trademark, .share {
+        line-height: 80px;
+        height: 80px;
+    }
+
+
+    .trademark {
+        width: 33.3%;
+    }
+
+    .share {
+        text-align: center;
+        font-size: 16px;
+        padding: 0;
+        width: 23.4%;
+        float: left;
+    }
+   
+}
+
+@media only screen and (min-width: 1024px) {
+    #header-links-container {
+        margin-right: 60px;
+    }
+
+    .navigation-links-container li {
+        margin-right: 45px;
+    }
+
+    .search-button {
+        display: none;
+    }
+
+    .search-input {
+        margin: 12px 5% 12px auto;
+        display: block;
+        padding-bottom: 5px;
+    }
+
+    .customer-navigation {
+        width: 22.4%
+    }
+
+    .bordered-left-contact-info {
+        padding-top: 5%;
+    }
+
+    .customer-care {
+        padding-left: 0;
+        border-right: 1px solid #c5c5c5;
+    }
+
+    .contact-info {
+        width: 20%;
+        padding-left: 5%;
+    }
+    
+    .follow-buttons-container {
+        padding-left: 5%;
+        padding-top: 38px;
+    }
+
+    .delivery-service-advertisement {
+        display: block;
+        width: 25%;
+        padding-left: 5%;
+        float: left;
+        font-family: "Open Sans";
+        font-style: italic;
+        color: #c5c5c5;
+        line-height: 30px;
+    }
+
+    .about-site-info .footer-navigation {
+        width: 25%;
+    }
+
+    .share {
+        margin-left: 5%;
+    }
+}
